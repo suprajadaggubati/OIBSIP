@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="tempcss.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">My Temperature Converter </h1>
+        <div class="temp-container">
+            Temperature Unit  : <select name="unit" id="Unit"><br><br>
+                <option>Select one of the Unit</option>
+                <option value="kelvin">Kelvin K</option>
+                <option value="fahrenheit">Fahrenheit °F</option>
+                <option value="celsius">Celsius °C</option>
+        </select><br><br>
+            Temperature  : <input type="text" name="temp" id="temp" placeholder="Enter a Valid number"><br><br>
+            <br><input type="button" value="Convert" id="convert" onclick="tempConverter()"><br><br>
+            <div id="result"></div>
+            <script src="tempconv.css"></script>
+    </div>
+    
+    <script src="./tempconv.js"></script>
+</body>
+</html>
